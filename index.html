@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <!-- <header></header> //por si algun dia debo ponerle un encabezado -->
+    <div class="contenedor">
+        <h1>Encriptador</h1>
+        <textarea class="caja" id="textoAEncriptar" placeholder="Ingrese el Texto a Encriptar"></textarea>
+        <button onclick="tomarTexto()">Encriptar</button> <button onclick="copiarDesencriptado()">Copiar</button>
+    </div>
+    <div class="contenedor">
+        <h1>Historial</h1>
+        <textarea class="caja" id="historial" placeholder="Debes darle a algun boton copiar para que se guarde en el historial" readonly></textarea>
+        <button id="historial" onclick="borrarHistorial()">Borrar Historial</button>
+    </div>
+    <div class="contenedor">
+        <h1>Desencriptador</h1>
+        <textarea class="caja" id="textoADesencriptar" placeholder="Ingrese el Texto Encriptado"></textarea>
+        <button onclick="tomarTextoEncriptado()">Desencriptar</button> <button onclick="copiarEncriptado()">Copiar</button>
+    </div>
+    <footer class="footer">
+        <h2>VicGame-Dev</h2>
+        <img src="aluraoracle.png" alt="logo de alura y oracle" class="logo">
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
